@@ -1,0 +1,28 @@
+{% load static %}
+
+<header>
+    <nav class="navbar">
+        <div class="logo-container">
+            <a href="{% url 'home page' %}">
+                <img src="{% static 'images/logo.png' %}" alt="Social Snap" class="logo">
+            </a>
+        </div>
+
+        <div class="search-container">
+            <form action="{% url 'search' %}" method="get">
+                 <input type="text" name="q" class="search-input" placeholder="Search">
+                 <button class="search-button" type="submit"><i class="fa-solid fa-magnifying-glass fa search-icon" style="color: #989797;"></i></button>
+            </form>
+        </div>
+
+        <div class="profile-icon-container">
+            <a href="{% url 'my profile' %}">
+                {% if request.user.profile.profile_picture %}
+                    <img src="{{ request.user.profile.profile_picture.url }}" alt="pfp" class="profile-icon">
+                {% else %}
+                    <img src="{% static 'images/default-user-icon.jpg' %}" alt="pfp" class="profile-icon">
+                {% endif %}
+            </a>
+        </div>
+    </nav>
+</header>
