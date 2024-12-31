@@ -3,7 +3,7 @@
 
 # 🌐 Social Snap
 
-Social Snap is a social media website created as part of the Python Web Framework course by SoftUni. It's built using Django and incorporates various web technologies to provide users with a rich social networking experience.
+Social Snap is a social media website created as part of the Python Web Framework course. It's built using Django and incorporates various web technologies to provide users with a rich social networking experience.
 
 ## 🌟 Features
 
@@ -43,6 +43,3 @@ Social Snap is a social media website created as part of the Python Web Framewor
 3. Explore the features: create posts, follow users, interact with posts, search for users, and manage your profile.
 4. Admin dashboard: Access the admin panel at [http://localhost:8000/admin](http://localhost:8000/admin) using the superuser credentials.
 
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE).
